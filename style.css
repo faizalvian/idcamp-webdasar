@@ -111,6 +111,11 @@ nav{
     z-index: 10;
 }
 
+.window-scroll{
+    background: #6c63ff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
 .navContainer{
     height: 100%;
     display: flex;
@@ -155,4 +160,104 @@ header{
     margin: 1rem 0 2.4rem;
 }
 /* End Header */
+
+/* Start Category */
+.categories{
+    background: #2e3267;
+    height: 29rem;
+}
+
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categoriesContainer{
+    display: flex;
+    grid-template-column: 40% 60%;
+}
+
+.categoriesLeft{
+    margin-right: 4rem;
+}
+
+.categoriesLeft p{
+    margin: 1rem 0 3rem;
+}
+
+.categoriesRight{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+
+.category{
+    background: #424890;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: all 400ms ease;
+}
+
+.category:nth-child(2) .categoryIcon{
+    background: #f75842;
+}
+.category:nth-child(3) .categoryIcon{
+    background: #00bf8e;
+}
+.category:nth-child(4) .categoryIcon{
+    background: #f7c94b;
+}
+
+.category:hover{
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+.categoryIcon{
+    background: #6c63ff;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category h5{
+    margin: 2rem 0 1rem;
+}
+
+.category p{
+    font-size: 0.85rem;
+}
+/* End Category */
+
+/* Start Course */
+.courses{
+    margin-top: 10rem;
+}
+
+.courseContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course{
+    background: #2e3267;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.course:hover{
+    background: transparent;
+    border-color: #6c63ff;
+}
+
+.courseInfo{
+    padding: 2rem;
+}
+
+.courseInfo p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+/* End Course */
 
