@@ -261,3 +261,158 @@ header{
 }
 /* End Course */
 
+/* Start Team */
+.team{
+    background: #2e3267;
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.teamContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.teamMember{
+    background: #424890;
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease; 
+    position: relative;
+}
+
+.teamMember:hover{
+    background: transparent;
+    border-color: #6c63ff;
+}
+
+.teamMember-image img{
+    filter: saturate(0);
+}
+
+.teamMember:hover img{
+    filter: saturate(1);
+}
+
+.teamMember-info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.teamMember-info h4{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.teamMember-info p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}
+
+.teamMember-social{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #6c63ff;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.teamMember-social a{
+    padding: 0.5rem;
+}
+/* End Team */
+
+/* Start Contact */
+.contactContainer{
+    background: #2e3267;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+.contactAside{
+    background: #6c63ff;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.contactImage{
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+
+.contactAside h2{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contactAside p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.contactDetails li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contactSocials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contactSocials a{
+    background: #424890;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.contactSocials a:hover{
+    background: transparent;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.formName{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contactForm input[type="text"]{
+    width: 50%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    background: #1f2641;
+    color: #fff;
+}
+
+.contactForm .btn{
+    width: max-content;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+/* End Contact */
+
